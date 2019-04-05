@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 533697a348117a847973854737e289d8
+guid: 2eddc3e374e274a4a84a3632e8f3a5e2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,16 +7,11 @@ ModelImporter:
     100002: //RootNode
     400000: node_id4
     400002: //RootNode
-    2100000: Material_69
+    2100000: Material_71
     2300000: node_id4
     3300000: node_id4
     4300000: node_id4
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_69
-    second: {fileID: 2100000, guid: adddab740e5f28b49a74e2a8c6ef653f, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

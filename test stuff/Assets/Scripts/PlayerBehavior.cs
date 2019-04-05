@@ -9,6 +9,7 @@ public class PlayerBehavior : MonoBehaviour
     public int rotateSpeed = 90; // the default speed at which the player rotates
     public GameObject objectInteractedWith; // the object that the player hit with a raycast after
     public string[] inventory = new string[4]; //array of strings that holds names of what is in player inventory
+    int totalItems = 0; //the total items you have. ups by one to save each item in a different slot
 
     // Update is called once per frame
     void Update()
@@ -67,13 +68,12 @@ public class PlayerBehavior : MonoBehaviour
 
     void CollectOject(Collision collision)
     {
-        int totalItems = 0; //the total items you have. ups by one to save each item in a different slot
 
         if (collision.gameObject.tag == "Obtainable Item") // checks to see if the item is obtainable
         {
 
             inventory[totalItems] = collision.gameObject.name; //saves game objects name into player inventory
-            
+            totalItems++;// ups the inventory spot by one
             Destroy(collision.gameObject); //destroys the game object
         }
         
